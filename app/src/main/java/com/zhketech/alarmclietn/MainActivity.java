@@ -31,6 +31,9 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.Enumeration;
 
+/**
+ * 向服务器发送
+ */
 public class MainActivity extends AppCompatActivity {
 
     DatagramSocket mDatagramSocket = null;
@@ -44,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ip = getIPAddress(this);
         Logutils.i("ip:" + ip);
-
     }
 
     @Override
@@ -248,7 +250,6 @@ public class MainActivity extends AppCompatActivity {
      *
      */
     public void btn_onck4(View view) {
-
 
         new Thread(new Runnable() {
             @Override
