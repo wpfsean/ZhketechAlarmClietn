@@ -15,17 +15,15 @@ public class ThreadReceiver extends BroadcastReceiver {
     public ThreadReceiver(OnGetDateListern onGetDateListern) {
         this.onGetDateListern = onGetDateListern;
     }
-
     @Override
     public void onReceive(Context context, Intent intent) {
+
 
         if(onGetDateListern!=null){
             onGetDateListern.getData("fgg");
         }
     }
-
     public interface OnGetDateListern {
         void getData(String str);
     }
-    ;
 }
