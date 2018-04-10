@@ -246,7 +246,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      *  申请 开启子弹箱
      *
-     * @param view
      */
     public void btn_onck4(View view) {
 
