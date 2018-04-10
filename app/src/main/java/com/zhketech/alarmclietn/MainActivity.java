@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ip = getIPAddress(this);
-        Logutils.i("ip:" + ip);
+
     }
 
     @Override
